@@ -2,6 +2,31 @@
 
 This is the Angular code that corresponds to the blog post series posted [here](http://joaogarin.com/posts/drupal-graphql-with-angular-and-apollo-part1)
 
+## Configuration
+
+Go to the folder src/environments and set the contenta URL to your own contenta installation.
+
+```
+export const environment = {
+  production: false,
+  contenta_url: 'http://contenta.local',
+  graphql: '/graphql',
+};
+```
+
+Go to the folder src/app and in the file auth.config.ts provide your own clientId : 
+
+```
+export const authConfig: AuthConfig = {
+  ...
+  // The SPA's id. The SPA is registerd with this id at the auth-server
+  clientId: 'YOUR_CLIENT_ID',
+  ...
+}
+```
+
+Also make sure to change the scope to your own roles (see blog posts).
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
 
 ## Development server
