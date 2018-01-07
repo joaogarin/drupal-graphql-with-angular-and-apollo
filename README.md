@@ -1,5 +1,7 @@
 # drupal-graphql-with-angular-and-apollo
 
+This is the Angular code that corresponds to the blog post series posted [here](http://joaogarin.com/posts/drupal-graphql-with-angular-and-apollo-part1)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
 
 ## Development server
